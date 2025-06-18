@@ -1,0 +1,129 @@
+Get:
+
+{
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+
+HEAD
+
+
+Date
+Wed, 18 Jun 2025 07:16:40 GMT
+Content-Type
+application/json; charset=utf-8
+Connection
+keep-alive
+Access-Control-Allow-Credentials
+true
+Cache-Control
+max-age=43200
+Etag
+W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Expires
+-1
+Nel
+{"report_to":"heroku-nel","response_headers":["Via"],"max_age":3600,"success_fraction":0.01,"failure_fraction":0.1}
+Pragma
+no-cache
+Report-To
+{"group":"heroku-nel","endpoints":[{"url":"https://nel.heroku.com/reports?s=OytjWNGe9TShnomxXeBaPlC6sU3SurKQ0SkHFpGVcik%3D\u0026sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d\u0026ts=1750092298"}],"max_age":3600}
+Reporting-Endpoints
+heroku-nel="https://nel.heroku.com/reports?s=OytjWNGe9TShnomxXeBaPlC6sU3SurKQ0SkHFpGVcik%3D&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&ts=1750092298"
+Server
+cloudflare
+Vary
+Origin, Accept-Encoding
+Via
+2.0 heroku-router
+X-Content-Type-Options
+nosniff
+X-Powered-By
+Express
+X-Ratelimit-Limit
+1000
+X-Ratelimit-Remaining
+999
+X-Ratelimit-Reset
+1750092307
+Age
+23205
+Cf-Cache-Status
+HIT
+Content-Encoding
+br
+CF-RAY
+951900a8af05027a-WAW
+alt-svc
+h3=":443"; ma=86400
+Online
+
+
+POST
+отправлен
+{
+  "title": "Новый пост",
+  "body": "Контент поста",
+  "userId": 1
+}
+
+создан
+{
+    "title": "мой пост",
+    "body": "контент поста",
+    "userId": 1,
+    "id": 101
+}
+
+PUT
+
+отправлен 
+{
+  "id": 1,
+  "title": "Обновлённый пост",
+  "body": "Новый текст",
+  "userId": 1
+}
+
+выведен
+
+{
+    "id": 1,
+    "title": "Обновлённый пост",
+    "body": "Новый текст",
+    "userId": 1
+}
+
+PATCH
+
+отправлен
+
+{
+  "title": "Частичное обновление"
+}
+
+выведен
+
+{
+    "userId": 1,
+    "id": 1,
+    "title": "Частичное обновление",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+DELETE
+объект будет удалён
+
+
+
+
+Метод	Действие	Идемпотентность	Изменяет сервер?
+GET	Получить ресурс	        ДА              НЕТ
+HEAD	Получить заголовки	ДА	        НЕТ
+POST	Создать ресурс	        НЕТ             ДА
+PUT	Полностью заменить	ДА	        ДА
+PATCH	Частично обновить    Частично	        ДА
+DELETE	Удалить ресурс	        ДА	        ДА
